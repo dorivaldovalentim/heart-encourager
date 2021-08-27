@@ -1,0 +1,28 @@
+
+/*
+ * RESPONSIVIDADE
+ */
+
+@media (max-width: 575px) {
+  section .title {
+    animation: AmorMobile 5s infinite;
+  }
+
+  .heart {
+    animation: BeatingHeartMobile 4s infinite;
+  }
+
+  .btn {padding: 15px}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1999px) {
+}
+
+@media (min-width: 1200px) {
+}

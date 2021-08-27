@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  transition: 150ms all ease-out;
+}
+
+/** KEYFRAMES */
+
+@keyframes Fundo {
+  from {background: #f74bbd}
+  to {background: #f74bbdff}
+}
+
+@keyframes Amor {
+  from {font-size: 20px;}
+  to {font-size: 50px;}
+}
+
+@keyframes BeatingHeart {
+  10% {font-size: 20em;}
+  20% {font-size: 25em;}
+  30% {font-size: 20em;}
+  40% {font-size: 25em;}
+  50% {font-size: 20em;}
+  60% {font-size: 25em;}
+  70% {font-size: 20em;}
+  80% {font-size: 25em;}
+  90% {font-size: 20em;}
+  100% {font-size: 25em;}
+}
+/** MOBILE ANIMATION */
+@keyframes AmorMobile {
+  from {font-size: 20px;}
+  to {font-size: 35px;}
+}
+
+@keyframes BeatingHeartMobile {
+  10% {font-size: 15em;}
+  20% {font-size: 20em;}
+  30% {font-size: 15em;}
+  40% {font-size: 20em;}
+  50% {font-size: 15em;}
+  60% {font-size: 20em;}
+  70% {font-size: 15em;}
+  80% {font-size: 20em;}
+  90% {font-size: 15em;}
+  100% {font-size: 20em;}
+}
+
+@keyframes Heart {
+  from {font-size: 20px;}
+  to {font-size: 50px;}
+}
+
+/***/
+
+section {
+  height: 100vh;
+  color: white;
+  text-align: center;
+  background-color: #f74bbd;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  animation: Fundo 4s infinite; 
+}
+
+section .title {
+  animation: Amor 5s infinite;
+  z-index: 10;
+  position: absolute;
+  top: 50px;
+}
+
+.text-danger {
+  color: red;
+}
+
+.heart {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20em;
+  animation: BeatingHeart 4s infinite;
+}
+
+.answers {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.btn {
+  display: block;
+  padding: 30px;
+  border-radius: 10px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 15pt
+}
+
+
+
+.btn-yes {
+  background: rgba(0, 255, 0, .8);
+}
+
+.btn-think {
+  background: rgba(0, 200, 200, .8);
+}
+
+.btn-no {
+  background: rgba(255, 0, 0, .8);
+}
+
+.btn-back {
+  background: rgba(255, 0, 0, .8);
+  display: none;
+}
+
+.btn-grow {
+  flex-grow: 1;
+}
+
+.animation-none {
+  animation: none;
+}
