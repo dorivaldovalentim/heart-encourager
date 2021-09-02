@@ -25,8 +25,6 @@ window.addEventListener('load', function() {
 
 		$back.style.display = 'block';
 		document.querySelector('.heart').classList.remove('animation-none');
-
-		console.log('sim');
 	});
 
 
@@ -59,7 +57,5 @@ window.addEventListener('load', function() {
 			document.querySelector('.heart').innerHTML = "💘";
 			$back.style.display = 'block';
 		}
-
-		console.log($confirm)
 	});
 });
