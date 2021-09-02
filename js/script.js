@@ -1,8 +1,16 @@
+/**
+ * JS principal e único do projecto
+ */
+
 window.addEventListener('load', function() {
+	// Preparação das variáveis de interação
 	$yes = document.querySelector('#yes');
 	$think = document.querySelector('#think');
 	$no = document.querySelector('#no');
 	$back = document.querySelector('#back');
+
+
+	// Trabalhando o listener do botão de aceitação
 
 	$yes.addEventListener('click', function(e) {
 		e.preventDefault();
@@ -21,6 +29,9 @@ window.addEventListener('load', function() {
 		console.log('sim');
 	});
 
+
+	// Trabalhando o listener do botão de preciso de tempo para pensar
+
 	$think.addEventListener('click', function(e) {
 		e.preventDefault();
 
@@ -32,6 +43,9 @@ window.addEventListener('load', function() {
 		document.querySelector('.heart').innerHTML = "🤔";
 		document.querySelector('.heart').classList.add('animation-none');
 	});
+
+
+	// Trabalhando o listener do botão de negação
 
 	$no.addEventListener('click', function(e) {
 		e.preventDefault();
