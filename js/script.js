@@ -2,6 +2,8 @@
  * JS principal e único do projecto
  */
 
+let container = document.querySelector('section');
+
 window.addEventListener('load', function() {
 	// Preparação das variáveis de interação
 	$yes = document.querySelector('#yes');
@@ -10,7 +12,7 @@ window.addEventListener('load', function() {
 	$back = document.querySelector('#back');
 
 
-	// Trabalhando o listener do botão de aceitação
+	// Trabalhando o listener de click do botão de aceitação
 
 	$yes.addEventListener('click', function(e) {
 		e.preventDefault();
@@ -28,7 +30,7 @@ window.addEventListener('load', function() {
 	});
 
 
-	// Trabalhando o listener do botão de preciso de tempo para pensar
+	// Trabalhando o listener de click do botão de preciso de tempo para pensar
 
 	$think.addEventListener('click', function(e) {
 		e.preventDefault();
@@ -43,7 +45,7 @@ window.addEventListener('load', function() {
 	});
 
 
-	// Trabalhando o listener do botão de negação
+	// Trabalhando o listener de click do botão de negação
 
 	$no.addEventListener('click', function(e) {
 		e.preventDefault();
@@ -57,5 +59,21 @@ window.addEventListener('load', function() {
 			document.querySelector('.heart').innerHTML = "💘";
 			$back.style.display = 'block';
 		}
+	});
+
+
+	// Trabalhando no listener de mouseenter do botão de negação
+
+	$no.addEventListener('mouseenter', function(e) {
+		let random_position = {
+			x: Math.floor(Math.random() * (container.offsetWidth - 100)),
+			y: Math.floor(Math.random() * (container.offsetHeight - 100))
+		}
+
+		console.log(random_position);
+
+		this.style.position = 'absolute';
+		this.style.left = `${random_position.x}px`;
+		this.style.top = `${random_position.y}px`;
 	});
 });
